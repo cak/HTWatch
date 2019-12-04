@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C5A52412374F11E00A97AB0 /* Conferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A52392374F11D00A97AB0 /* Conferences.swift */; };
+		3C5A52422374F11E00A97AB0 /* Speakers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A523A2374F11D00A97AB0 /* Speakers.swift */; };
+		3C5A52432374F11E00A97AB0 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A523B2374F11D00A97AB0 /* Articles.swift */; };
+		3C5A52442374F11E00A97AB0 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A523C2374F11D00A97AB0 /* Events.swift */; };
+		3C5A52452374F11E00A97AB0 /* EventTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A523D2374F11E00A97AB0 /* EventTypes.swift */; };
+		3C5A52462374F11E00A97AB0 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A523E2374F11E00A97AB0 /* Locations.swift */; };
+		3C5A52472374F11E00A97AB0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A523F2374F11E00A97AB0 /* Core.swift */; };
+		3C80F2E623876840002D2417 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80F2E523876840002D2417 /* EventsView.swift */; };
+		3CC0509A236E5B4700482785 /* HTWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3CC05099236E5B4700482785 /* HTWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3CC050A0236E5B4700482785 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC0509E236E5B4700482785 /* Interface.storyboard */; };
+		3CC050A2236E5B4900482785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC050A1236E5B4900482785 /* Assets.xcassets */; };
+		3CC050A9236E5B4900482785 /* HTWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3CC050A8236E5B4900482785 /* HTWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3CC050AE236E5B4900482785 /* ConferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC050AD236E5B4900482785 /* ConferencesView.swift */; };
+		3CC050B0236E5B4900482785 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC050AF236E5B4900482785 /* HostingController.swift */; };
+		3CC050B2236E5B4900482785 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC050B1236E5B4900482785 /* ExtensionDelegate.swift */; };
+		3CC050B8236E5B4A00482785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC050B7236E5B4A00482785 /* Assets.xcassets */; };
+		3CC050BB236E5B4A00482785 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC050BA236E5B4A00482785 /* Preview Assets.xcassets */; };
+		3CC2F8402388B59E0096D2DF /* DateDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F83F2388B59E0096D2DF /* DateDecoding.swift */; };
+		3CC2F8422388C7D90096D2DF /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F8412388C7D90096D2DF /* EventDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CC0509B236E5B4700482785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CC0508F236E5B4700482785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CC05098236E5B4700482785;
+			remoteInfo = "HTWatch WatchKit App";
+		};
+		3CC050AA236E5B4900482785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CC0508F236E5B4700482785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CC050A7236E5B4900482785;
+			remoteInfo = "HTWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CC050C3236E5B4A00482785 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3CC050A9236E5B4900482785 /* HTWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CC050C7236E5B4A00482785 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3CC0509A236E5B4700482785 /* HTWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C5A52392374F11D00A97AB0 /* Conferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conferences.swift; sourceTree = "<group>"; };
+		3C5A523A2374F11D00A97AB0 /* Speakers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speakers.swift; sourceTree = "<group>"; };
+		3C5A523B2374F11D00A97AB0 /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		3C5A523C2374F11D00A97AB0 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		3C5A523D2374F11E00A97AB0 /* EventTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTypes.swift; sourceTree = "<group>"; };
+		3C5A523E2374F11E00A97AB0 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		3C5A523F2374F11E00A97AB0 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		3C80F2E523876840002D2417 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		3CC05095236E5B4700482785 /* HTWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC05099236E5B4700482785 /* HTWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC0509F236E5B4700482785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3CC050A1236E5B4900482785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CC050A3236E5B4900482785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC050A8236E5B4900482785 /* HTWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HTWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC050AD236E5B4900482785 /* ConferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferencesView.swift; sourceTree = "<group>"; };
+		3CC050AF236E5B4900482785 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		3CC050B1236E5B4900482785 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3CC050B7236E5B4A00482785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CC050BA236E5B4A00482785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CC050BC236E5B4A00482785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC2F83F2388B59E0096D2DF /* DateDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecoding.swift; sourceTree = "<group>"; };
+		3CC2F8412388C7D90096D2DF /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CC050A5236E5B4900482785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A6CBAC12384BE650062EDD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CC050AD236E5B4900482785 /* ConferencesView.swift */,
+				3C80F2E523876840002D2417 /* EventsView.swift */,
+				3CC2F8412388C7D90096D2DF /* EventDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C5A52382374F0EE00A97AB0 /* HTWatchCore */ = {
+			isa = PBXGroup;
+			children = (
+				3C5A523B2374F11D00A97AB0 /* Articles.swift */,
+				3C5A52392374F11D00A97AB0 /* Conferences.swift */,
+				3C5A523F2374F11E00A97AB0 /* Core.swift */,
+				3C5A523C2374F11D00A97AB0 /* Events.swift */,
+				3C5A523D2374F11E00A97AB0 /* EventTypes.swift */,
+				3C5A523E2374F11E00A97AB0 /* Locations.swift */,
+				3C5A523A2374F11D00A97AB0 /* Speakers.swift */,
+				3CC2F83F2388B59E0096D2DF /* DateDecoding.swift */,
+			);
+			path = HTWatchCore;
+			sourceTree = "<group>";
+		};
+		3CC0508E236E5B4700482785 = {
+			isa = PBXGroup;
+			children = (
+				3CC0509D236E5B4700482785 /* HTWatch WatchKit App */,
+				3CC050AC236E5B4900482785 /* HTWatch WatchKit Extension */,
+				3CC05096236E5B4700482785 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CC05096236E5B4700482785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CC05095236E5B4700482785 /* HTWatch.app */,
+				3CC05099236E5B4700482785 /* HTWatch WatchKit App.app */,
+				3CC050A8236E5B4900482785 /* HTWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CC0509D236E5B4700482785 /* HTWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3CC0509E236E5B4700482785 /* Interface.storyboard */,
+				3CC050A1236E5B4900482785 /* Assets.xcassets */,
+				3CC050A3236E5B4900482785 /* Info.plist */,
+			);
+			path = "HTWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		3CC050AC236E5B4900482785 /* HTWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2A6CBAC12384BE650062EDD8 /* Views */,
+				3C5A52382374F0EE00A97AB0 /* HTWatchCore */,
+				3CC050AF236E5B4900482785 /* HostingController.swift */,
+				3CC050B1236E5B4900482785 /* ExtensionDelegate.swift */,
+				3CC050B7236E5B4A00482785 /* Assets.xcassets */,
+				3CC050BC236E5B4A00482785 /* Info.plist */,
+				3CC050B9236E5B4A00482785 /* Preview Content */,
+			);
+			path = "HTWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3CC050B9236E5B4A00482785 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3CC050BA236E5B4A00482785 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CC05094236E5B4700482785 /* HTWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC050C8236E5B4A00482785 /* Build configuration list for PBXNativeTarget "HTWatch" */;
+			buildPhases = (
+				3CC05093236E5B4700482785 /* Resources */,
+				3CC050C7236E5B4A00482785 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CC0509C236E5B4700482785 /* PBXTargetDependency */,
+			);
+			name = HTWatch;
+			productName = HTWatch;
+			productReference = 3CC05095236E5B4700482785 /* HTWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3CC05098236E5B4700482785 /* HTWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC050C4236E5B4A00482785 /* Build configuration list for PBXNativeTarget "HTWatch WatchKit App" */;
+			buildPhases = (
+				3CC05097236E5B4700482785 /* Resources */,
+				3CC050C3236E5B4A00482785 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CC050AB236E5B4900482785 /* PBXTargetDependency */,
+			);
+			name = "HTWatch WatchKit App";
+			productName = "HTWatch WatchKit App";
+			productReference = 3CC05099236E5B4700482785 /* HTWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3CC050A7236E5B4900482785 /* HTWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC050C0236E5B4A00482785 /* Build configuration list for PBXNativeTarget "HTWatch WatchKit Extension" */;
+			buildPhases = (
+				3CC050A4236E5B4900482785 /* Sources */,
+				3CC050A5236E5B4900482785 /* Frameworks */,
+				3CC050A6236E5B4900482785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HTWatch WatchKit Extension";
+			productName = "HTWatch WatchKit Extension";
+			productReference = 3CC050A8236E5B4900482785 /* HTWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CC0508F236E5B4700482785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = caleb;
+				TargetAttributes = {
+					3CC05094236E5B4700482785 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					3CC05098236E5B4700482785 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					3CC050A7236E5B4900482785 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 3CC05092236E5B4700482785 /* Build configuration list for PBXProject "HTWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CC0508E236E5B4700482785;
+			productRefGroup = 3CC05096236E5B4700482785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CC05094236E5B4700482785 /* HTWatch */,
+				3CC05098236E5B4700482785 /* HTWatch WatchKit App */,
+				3CC050A7236E5B4900482785 /* HTWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CC05093236E5B4700482785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CC05097236E5B4700482785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC050A2236E5B4900482785 /* Assets.xcassets in Resources */,
+				3CC050A0236E5B4700482785 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CC050A6236E5B4900482785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC050BB236E5B4A00482785 /* Preview Assets.xcassets in Resources */,
+				3CC050B8236E5B4A00482785 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CC050A4236E5B4900482785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C80F2E623876840002D2417 /* EventsView.swift in Sources */,
+				3C5A52432374F11E00A97AB0 /* Articles.swift in Sources */,
+				3CC050B0236E5B4900482785 /* HostingController.swift in Sources */,
+				3CC050AE236E5B4900482785 /* ConferencesView.swift in Sources */,
+				3C5A52422374F11E00A97AB0 /* Speakers.swift in Sources */,
+				3C5A52412374F11E00A97AB0 /* Conferences.swift in Sources */,
+				3C5A52472374F11E00A97AB0 /* Core.swift in Sources */,
+				3C5A52452374F11E00A97AB0 /* EventTypes.swift in Sources */,
+				3C5A52442374F11E00A97AB0 /* Events.swift in Sources */,
+				3CC050B2236E5B4900482785 /* ExtensionDelegate.swift in Sources */,
+				3CC2F8422388C7D90096D2DF /* EventDetailView.swift in Sources */,
+				3C5A52462374F11E00A97AB0 /* Locations.swift in Sources */,
+				3CC2F8402388B59E0096D2DF /* DateDecoding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CC0509C236E5B4700482785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CC05098236E5B4700482785 /* HTWatch WatchKit App */;
+			targetProxy = 3CC0509B236E5B4700482785 /* PBXContainerItemProxy */;
+		};
+		3CC050AB236E5B4900482785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CC050A7236E5B4900482785 /* HTWatch WatchKit Extension */;
+			targetProxy = 3CC050AA236E5B4900482785 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CC0509E236E5B4700482785 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CC0509F236E5B4700482785 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CC050BE236E5B4A00482785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CC050BF236E5B4A00482785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CC050C1236E5B4A00482785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HTWatch WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HTWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = optionalvalue.com.HTWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		3CC050C2236E5B4A00482785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HTWatch WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HTWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = optionalvalue.com.HTWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		3CC050C5236E5B4A00482785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HTWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HTWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = optionalvalue.com.HTWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		3CC050C6236E5B4A00482785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HTWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HTWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = optionalvalue.com.HTWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		3CC050C9236E5B4A00482785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JKH8RWC9D6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = optionalvalue.com.HTWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3CC050CA236E5B4A00482785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JKH8RWC9D6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = optionalvalue.com.HTWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CC05092236E5B4700482785 /* Build configuration list for PBXProject "HTWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC050BE236E5B4A00482785 /* Debug */,
+				3CC050BF236E5B4A00482785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CC050C0236E5B4A00482785 /* Build configuration list for PBXNativeTarget "HTWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC050C1236E5B4A00482785 /* Debug */,
+				3CC050C2236E5B4A00482785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CC050C4236E5B4A00482785 /* Build configuration list for PBXNativeTarget "HTWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC050C5236E5B4A00482785 /* Debug */,
+				3CC050C6236E5B4A00482785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CC050C8236E5B4A00482785 /* Build configuration list for PBXNativeTarget "HTWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC050C9236E5B4A00482785 /* Debug */,
+				3CC050CA236E5B4A00482785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CC0508F236E5B4700482785 /* Project object */;
+}
