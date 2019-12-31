@@ -14,7 +14,7 @@ struct EventsView: View {
                         VStack(alignment: .leading) {
                             NavigationLink(event.title, destination:
                                 EventDetailView(event: event, conference: self.event, speakers: SpeakersManager(event: self.eventCode), locations: LocationsManager(event: self.eventCode)))
-                            Text(DateDecoding(event.startDate).event())
+                            Text(DateDecoding(event.startDate).event()).font(.footnote)
                         }
                 }
             }

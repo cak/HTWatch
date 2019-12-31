@@ -11,13 +11,19 @@ struct EventDetailView: View {
             VStack {
                 Text(event.title).bold().multilineTextAlignment(.center).layoutPriority(1)
                 Spacer()
-                Text(event.description).font(.footnote)
-                    .foregroundColor(.gray)
-                    .lineLimit(15)
+                if !event.description.isEmpty {
+                    Text(event.description).font(.footnote)
+                        .foregroundColor(.gray)
+                        .lineLimit(50)
+                    Spacer()
+                }
+                if !event.speakers.isEmpty {
+                    Text("Speakers").font(.subheadline).bold()
+                    Text(lookupSpeakers(id: self.event.speakers, speakers: speakers.speakers)).font(.footnote)
+                }
                 Spacer()
-                Text(lookupSpeakers(id: self.event.speakers, speakers: speakers.speakers)).font(.body)
-                Spacer()
-                Text(lookupLocation(id: self.event.location, location: locations.locations)).font(.body)
+                Text("Location").font(.subheadline).bold()
+                Text(lookupLocation(id: self.event.location, location: locations.locations)).font(.footnote)
                 
             }
         }
