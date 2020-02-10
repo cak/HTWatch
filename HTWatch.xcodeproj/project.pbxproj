@@ -24,6 +24,7 @@
 		3CC050B2236E5B4900482785 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC050B1236E5B4900482785 /* ExtensionDelegate.swift */; };
 		3CC050B8236E5B4A00482785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC050B7236E5B4A00482785 /* Assets.xcassets */; };
 		3CC050BB236E5B4A00482785 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC050BA236E5B4A00482785 /* Preview Assets.xcassets */; };
+		3CC1B2B523F0E47E00070E14 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC1B2B423F0E47E00070E14 /* Utils.swift */; };
 		3CC2F8402388B59E0096D2DF /* DateDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F83F2388B59E0096D2DF /* DateDecoding.swift */; };
 		3CC2F8422388C7D90096D2DF /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F8412388C7D90096D2DF /* EventDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		3CC050B7236E5B4A00482785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC050BA236E5B4A00482785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CC050BC236E5B4A00482785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC1B2B423F0E47E00070E14 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		3CC2F83F2388B59E0096D2DF /* DateDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecoding.swift; sourceTree = "<group>"; };
 		3CC2F8412388C7D90096D2DF /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				3C5A523E2374F11E00A97AB0 /* Locations.swift */,
 				3C5A523A2374F11D00A97AB0 /* Speakers.swift */,
 				3CC2F83F2388B59E0096D2DF /* DateDecoding.swift */,
+				3CC1B2B423F0E47E00070E14 /* Utils.swift */,
 			);
 			path = HTWatchCore;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				3C80F2E623876840002D2417 /* EventsView.swift in Sources */,
 				3C5A52432374F11E00A97AB0 /* Articles.swift in Sources */,
 				3CC050B0236E5B4900482785 /* HostingController.swift in Sources */,
+				3CC1B2B523F0E47E00070E14 /* Utils.swift in Sources */,
 				3CC050AE236E5B4900482785 /* ConferencesView.swift in Sources */,
 				3C5A52422374F11E00A97AB0 /* Speakers.swift in Sources */,
 				3C5A52412374F11E00A97AB0 /* Conferences.swift in Sources */,

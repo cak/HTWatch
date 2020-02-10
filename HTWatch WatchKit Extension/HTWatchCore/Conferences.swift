@@ -34,28 +34,22 @@ class ConferencesManager: ObservableObject {
     
     @Published var conferences = [ConferenceDetails]()
     
-    init() {
-        guard let url = URL(string: "https://hackertracker.app/conferences.json") else { return }
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else { return }
-            let decoded = self.decodeConferences(data: data)
-            switch decoded {
-            case let .success(decodedData):
-                DispatchQueue.main.async {
-                    self.conferences = decodedData.conferences
-                }
-            case let .failure(error):
-                print(error)
-                return
-            }
-        }.resume()
+    private var searchCancellable: Cancellable? {
+        didSet { oldValue?.cancel() }
     }
     
-    func decodeConferences(data: Data) -> Result<HTConferences, HTError> {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        guard let decoded = try? decoder.decode(HTConferences.self, from: data) else { return .failure(.decodeError) }
-        return .success(decoded)
-        
+    deinit {
+        searchCancellable?.cancel()
+    }
+    
+    init() {
+        guard let url = URL(string: "https://hackertracker.app/conferences.json") else { return }
+        searchCancellable = URLSession.shared.dataTaskPublisher(for: url)
+            .map { $0.data}
+            .decode(type: HTConferences.self, decoder: decoder())
+            .map { $0.conferences}
+            .replaceError(with: [ConferenceDetails]())
+            .receive(on: RunLoop.main)
+            .assign(to: \.conferences, on: self)
     }
 }
